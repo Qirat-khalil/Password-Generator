@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-  
-    <script src="app.js"></script>
+
+<body >
+
+<video autoplay muted loop id="bg-video">
+  <source src="video/316_flying_particles_particles_stars_hd1992.mov" type="video/mp4" />
+
+</video>
+   <div class="container main">
+    <div class="row main-2">
+        <div class="col-12 col-lg-12 col-md-12">
+
+             <h2 class="my-3 ">Password Generator </h2> 
+
+          <div class="inp-box mt-4" id="inp-box1">
+            <input type="text" placeholder="Generated Password" readonly>
+               <i class="fa-solid fa-copy copy-i" style="color: black;"></i>
+          </div>
+
+          <div class="rang-box my-3">
+            <input type="range"  min="1" max="30" value="8" id="slider">
+          </div>
+
+          <div class="sec ">
+            <p>Password length</p>
+            <span id="sli-value">8</span>
+          </div>
+
+          <div class="sec1 my-3">
+            <label for="upercase">Include UpperCase (A-Z)</label>
+            <input type="checkbox" id="upercase" name="uperercase">
+          
+          </div>
+
+          <div class="sec1 my-3">
+            <label for="lowercase">Include LowerCase (a-z)</label>
+            <input type="checkbox" id="lowercase" name="lowercase">
+          
+          </div>
+
+          <div class="sec1 my-3">
+            <label for="num">Include Number</label>
+            <input type="checkbox" id="num" name="num">
+          
+          </div>
+          
+          <div class="sec1 my-3">
+            <label for="symbol">Include Symbol</label>
+            <input type="checkbox" id="symbol" name="symbol">
+          
+          </div>
+          
+           <button type="submit" class=" btt my-3">Generate Password</button>
+          
+
+        </div>
+        
+
+     
+    </div>
+ </div>
+
+  <script src="app.js"></script>
 </body>
+
 </html>

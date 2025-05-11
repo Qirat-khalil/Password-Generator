@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Puts video behind content */
+}
+
+.main {
+    margin-top: 30px;
+    width: 30%;
+    padding: 25px;
+    color: beige;
+    background-color: rgb(138, 138, 126);
+    /* box-shadow: 6px 6px 9px gray; */
+      box-shadow: 6px 6px 9px rgb(201, 170, 170);
+
+}
+
+h2{
+
+    color: rgb(65, 61, 64);
+}
+.inp-box input{
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 85%;
+    padding: 10px;
+      box-shadow: 6px 6px 9px rgb(201, 170, 170);
+}
+
+.inp-box .fa-copy{
+   margin-left: -25px;
+   cursor: pointer;
+
+}
+
+.rang-box input{
+    width: 75%;
+}
+.sec{
+    display: flex;
+
+}
+
+.sec p {
+    flex-basis: 80%;
+    font-size: 20px;
+}
+
+.sec1{
+    display: flex;
+}
+
+.sec1 label{
+    flex-basis: 80%;
+    font-size: 20px;
+}
+.sec1 input[type="checkbox"]{
+    width: 20px;
+}
+
+
+button{
+    padding: 5px;
+    width: 100%;
+    font-size: 20px;
+}
+.btt{
+    background-color: rgb(153, 151, 155);
+    border-radius: 8px;
+    box-shadow: 6px 6px 9px rgb(201, 170, 170);
+   border: none;
+   color: white;
+}
+
+
+
+
+.head{
+    color: blue;
+    /* background-color: brown; */
+    font-size: 25px;
+}
+
+.newpara{
+    background-color: blue;
+}
